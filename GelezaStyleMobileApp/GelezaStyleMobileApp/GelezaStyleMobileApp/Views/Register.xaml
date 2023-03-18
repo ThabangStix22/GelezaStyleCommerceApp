@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="GelezaStyleMobileApp.Views.Register"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <StackLayout BackgroundColor="#e6e6e6">
+        <Grid>
+            <StackLayout
+                Margin="0"
+                Padding="0"
+                HorizontalOptions="FillAndExpand">
+                <Frame
+                    Margin="0"
+                    Padding="0"
+                    BackgroundColor="#04356d"
+                    HeightRequest="150">
+                    <Image
+                        Margin="0"
+                        Aspect="AspectFill"
+                        Source="uniform.jpg" />
+                </Frame>
+            </StackLayout>
+
+            <StackLayout
+                Margin="10,100,10,0"
+                Padding="0"
+                HorizontalOptions="FillAndExpand">
+
+                <StackLayout Margin="0,5,0,0" Padding="0" />
+
+                <ScrollView>
+                    <Frame
+                        Margin="0"
+                        Padding="0"
+                        BackgroundColor="White"
+                        HasShadow="True"
+                        HeightRequest="550">
+                        <StackLayout>
+                            <StackLayout Margin="10">
+                                <Label
+                                    FontAttributes="Bold"
+                                    FontFamily="Lobster"
+                                    HorizontalOptions="CenterAndExpand"
+                                    Text="GELEZA STYLE REGISTRATION"
+                                    TextColor="Black" />
+                            </StackLayout>
+
+                            <StackLayout Margin="15,10" Padding="0">
+
+                                <Frame
+                                    Padding="0"
+                                    BackgroundColor="Transparent"
+                                    BorderColor="DarkGray"
+                                    CornerRadius="30"
+                                    HorizontalOptions="FillAndExpand">
+                                    <StackLayout Orientation="Horizontal">
+                                        <Frame
+                                            Margin="5"
+                                            Padding="0"
+                                            BackgroundColor="SkyBlue"
+                                            CornerRadius="30"
+                                            HeightRequest="40"
+                                            WidthRequest="40">
+                                            <Image
+                                                Margin="0"
+                                                Aspect="AspectFill"
+                                                Source="man.png" />
+                                        </Frame>
+
+                                        <Entry
+                                            x:Name="txtName"
+                                            Margin="0,0,20,0"
+                                            FontAttributes="None"
+                                            HorizontalOptions="FillAndExpand"
+                                            Placeholder="First Name"
+                                            TextColor="#04356d" />
+                                    </StackLayout>
+                                </Frame>
+
+                                <Frame
+                                    Margin="0,15,0,0"
+                                    Padding="0"
+                                    BackgroundColor="Transparent"
+                                    BorderColor="DarkGray"
+                                    CornerRadius="30"
+                                    HorizontalOptions="FillAndExpand">
+                                    <StackLayout Orientation="Horizontal">
+                                        <Frame
+                                            Margin="5"
+                                            Padding="0"
+                                            BackgroundColor="SkyBlue"
+                                            CornerRadius="30"
+                                            HeightRequest="40"
+                                            WidthRequest="40">
+                                            <Image
+                                                Margin="0"
+                                                Aspect="AspectFill"
+                                                Source="signature.png" />
+                                        </Frame>
+
+                                        <Entry
+                                            x:Name="txtSurname"
+                                            Margin="0,0,20,0"
+                                            FontAttributes="None"
+                                            HorizontalOptions="FillAndExpand"
+                                            Placeholder="Surname"
+                                            TextColor="#04356d" />
+                                    </StackLayout>
+                                </Frame>
+
+
+                                <Frame
+                                    Margin="0,15,0,0"
+                                    Padding="0"
+                                    BackgroundColor="Transparent"
+                                    BorderColor="DarkGray"
+                                    CornerRadius="30"
+                                    HorizontalOptions="FillAndExpand">
+                                    <StackLayout Orientation="Horizontal">
+                                        <Frame
+                                            Margin="5"
+                                            Padding="0"
+                                            BackgroundColor="Yellow"
+                                            CornerRadius="30"
+                                            HeightRequest="40"
+                                            WidthRequest="40">
+                                            <Image
+                                                Margin="0"
+                                                Aspect="AspectFill"
+                                                Source="home.png" />
+                                        </Frame>
+
+                                        <Entry
+                                            x:Name="txtAddress"
+                                            Margin="0,0,20,0"
+                                            FontAttributes="None"
+                                            HorizontalOptions="FillAndExpand"
+                                            Placeholder="Home Address"
+                                            TextColor="#04356d" />
+                                    </StackLayout>
+                                </Frame>
+
+
+                                <Frame
+                                    Margin="0,15,0,0"
+                                    Padding="0"
+                                    BackgroundColor="Transparent"
+                                    BorderColor="DarkGray"
+                                    CornerRadius="30"
+                                    HorizontalOptions="FillAndExpand">
+                                    <StackLayout Orientation="Horizontal">
+                                        <Frame
+                                            Margin="5"
+                                            Padding="0"
+                                            BackgroundColor="Wheat"
+                                            CornerRadius="30"
+                                            HeightRequest="40"
+                                            WidthRequest="40">
+                                            <Image
+                                                Margin="0"
+                                                Aspect="AspectFill"
+                                                Source="phone.png" />
+                                        </Frame>
+
+                                        <Entry
+                                            x:Name="txtPhoneNo"
+                                            Margin="0,0,20,0"
+                                            FontAttributes="None"
+                                            HorizontalOptions="FillAndExpand"
+                                            MaxLength="10"
+                                            Placeholder="Cell number e.g 0123456789"
+                                            TextColor="#04356d" />
+                                    </StackLayout>
+                                </Frame>
+
+                                <Frame
+                                    Margin="0,15,0,0"
+                                    Padding="0"
+                                    BackgroundColor="Transparent"
+                                    BorderColor="DarkGray"
+                                    CornerRadius="30"
+                                    HorizontalOptions="FillAndExpand">
+                                    <StackLayout Orientation="Horizontal">
+                                        <Frame
+                                            Margin="5"
+                                            Padding="0"
+                                            BackgroundColor="SkyBlue"
+                                            CornerRadius="30"
+                                            HeightRequest="40"
+                                            WidthRequest="40">
+                                            <Image
+                                                Margin="0"
+                                                Aspect="AspectFill"
+                                                Source="email.png" />
+                                        </Frame>
+
+                                        <Entry
+                                            x:Name="txtEmail"
+                                            Margin="0,0,20,0"
+                                            FontAttributes="None"
+                                            HorizontalOptions="FillAndExpand"
+                                            Placeholder="Email Address"
+                                            TextColor="#04356d" />
+                                    </StackLayout>
+                                </Frame>
+
+                                <Frame
+                                    Margin="0,15,0,0"
+                                    Padding="0"
+                                    BackgroundColor="Transparent"
+                                    BorderColor="DarkGray"
+                                    CornerRadius="30"
+                                    HorizontalOptions="FillAndExpand">
+                                    <StackLayout Orientation="Horizontal">
+                                        <Frame
+                                            Margin="5"
+                                            Padding="0"
+                                            BackgroundColor="White"
+                                            CornerRadius="30"
+                                            HeightRequest="40"
+                                            WidthRequest="40">
+                                            <Image
+                                                Margin="0"
+                                                Aspect="AspectFill"
+                                                Source="padlock.png" />
+                                        </Frame>
+
+                                        <Entry
+                                            x:Name="txtPassword"
+                                            Margin="0,0,20,0"
+                                            FontAttributes="None"
+                                            HorizontalOptions="FillAndExpand"
+                                            IsPassword="True"
+                                            Placeholder="Password"
+                                            TextColor="#04356d" />
+                                    </StackLayout>
+                                </Frame>
+
+
+
+                                <Button
+                                    x:Name="btnRegister"
+                                    Margin="0,15,0,0"
+                                    BackgroundColor="#04356d"
+                                    Clicked="btnRegister_Clicked"
+                                    CornerRadius="30"
+                                    Text="REGISTER"
+                                    TextColor="White" />
+
+                            </StackLayout>
+                        </StackLayout>
+                    </Frame>
+                </ScrollView>
+
+
+            </StackLayout>
+        </Grid>
+    </StackLayout>
+</ContentPage>

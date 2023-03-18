@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage
+    x:Class="GelezaStyleMobileApp.Views.SortPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:InnerPage="clr-namespace:GelezaStyleMobileApp.Views">
+    <!--  Pages can be added as references or inline  -->
+    <InnerPage:Offers Title="Boys" />
+    <InnerPage:Offers Title="Girls" />
+
+</TabbedPage>
