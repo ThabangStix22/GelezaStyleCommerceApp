@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="GelezaStyleMobileApp.Views.ItemPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="{Binding ItemName}"
+    NavigationPage.HasBackButton="True">
+
+    <Grid
+        Grid.Column="3"
+        Margin="5"
+        ColumnDefinitions="auto,auto,auto,auto"
+        HorizontalOptions="CenterAndExpand"
+        RowDefinitions="auto,auto,auto">
+
+        <StackLayout>
+            <StackLayout>
+                <Frame
+                    Margin="0"
+                    Padding="5"
+                    BorderColor="DarkGray"
+                    CornerRadius="5"
+                    HasShadow="True"
+                    HeightRequest="300"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center">
+
+                    <Image Aspect="AspectFill" Source="{Binding ItemTempImageHolder}" />
+                </Frame>
+            </StackLayout>
+
+            <Label
+                Grid.Row="2"
+                Style="{StaticResource ItemLabelStyle}"
+                Text="{Binding ItemDescription}" />
+
+            <Frame
+                Grid.Row="2"
+                Grid.Column="1"
+                Margin="0"
+                Padding="0"
+                BackgroundColor="{StaticResource StylishGrayColour}"
+                BorderColor="Gray"
+                CornerRadius="5"
+                HasShadow="True"
+                HorizontalOptions="Center"
+                WidthRequest="100">
+
+                <Label Style="{StaticResource ItemPriceLabelStyle}" Text="{Binding ItemPrice}" />
+            </Frame>
+
+
+            <Label
+                Grid.Row="3"
+                Grid.ColumnSpan="2"
+                Style="{StaticResource ItemLabelStyle}"
+                Text="{Binding ItemDescrption}" />
+
+            <StackLayout Grid.Row="4">
+                <Label Text="Size:" />
+                <Picker x:Name="SizePicker" VerticalTextAlignment="Center" />
+            </StackLayout>
+
+            <StackLayout Grid.Row="5">
+                <Label Text="Quantity: " VerticalTextAlignment="Center" />
+                <Picker x:Name="AmountPicker" VerticalTextAlignment="Center">
+                    <Picker.Items>
+                        <x:String>1</x:String>
+                        <x:String>2</x:String>
+                        <x:String>3</x:String>
+                        <x:String>4</x:String>
+                        <x:String>5</x:String>
+                        <x:String>6</x:String>
+                        <x:String>7</x:String>
+                        <x:String>8</x:String>
+                        <x:String>9</x:String>
+                        <x:String>10</x:String>
+                    </Picker.Items>
+                </Picker>
+            </StackLayout>
+
+            <Frame
+                Grid.Row="6"
+                Grid.ColumnSpan="2"
+                Style="{StaticResource ButtonFrameStyle}">
+
+                <Button
+                    x:Name="btnBuy"
+                    Grid.Row="3"
+                    Grid.Column="2"
+                    Clicked="btnBuy_Clicked"
+                    Style="{StaticResource ButtonStyle}"
+                    Text="Buy"
+                    WidthRequest="150" />
+            </Frame>
+
+        </StackLayout>
+
+    </Grid>
+
+
+</ContentPage>

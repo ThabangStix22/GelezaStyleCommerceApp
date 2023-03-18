@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application
+    x:Class="GelezaStyleMobileApp.App"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <Application.Resources>
+
+        <Color x:Key="SeparatorGrayColour">#DCDCDC</Color>
+        <Color x:Key="PrimaryColour">#00416E</Color>
+        <Color x:Key="BlackColour">#000</Color>
+        <Color x:Key="WhiteColour">#FFF</Color>
+        <Color x:Key="StylishGrayColour">#4B515D</Color>
+
+        <Style x:Key="BoxViewSeparatorStyle" TargetType="BoxView">
+            <Setter Property="Margin" Value="0,3" />
+            <Setter Property="HeightRequest" Value="1" />
+            <Setter Property="HorizontalOptions" Value="Center" />
+            <Setter Property="Color" Value="{StaticResource SeparatorGrayColour}" />
+        </Style>
+
+
+        <Style x:Key="ItemLabelStyle" TargetType="Label">
+            <Setter Property="TextColor" Value="Black" />
+            <Setter Property="FontSize" Value="18" />
+            <Setter Property="HorizontalOptions" Value="Center" />
+            <Setter Property="VerticalOptions" Value="Center" />
+        </Style>
+
+        <Style x:Key="ItemPriceLabelStyle" TargetType="Label">
+            <Setter Property="TextColor" Value="{StaticResource WhiteColour}" />
+            <Setter Property="FontSize" Value="15" />
+            <Setter Property="HorizontalOptions" Value="Center" />
+            <Setter Property="VerticalOptions" Value="Center" />
+
+        </Style>
+
+
+
+
+        <Style x:Key="ButtonFrameStyle" TargetType="Frame">
+            <Setter Property="BackgroundColor" Value="#04356d" />
+            <Setter Property="HasShadow" Value="True" />
+            <Setter Property="Margin" Value="5" />
+            <Setter Property="CornerRadius" Value="100" />
+            <Setter Property="Margin" Value="50,30,50,30" />
+            <Setter Property="HorizontalOptions" Value="Center" />
+            <Setter Property="Padding" Value="0" />
+        </Style>
+
+        <Style x:Key="ButtonStyle" TargetType="Button">
+            <Setter Property="BackgroundColor" Value="#04356d" />
+            <Setter Property="TextColor" Value="White" />
+            <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+            <Setter Property="CornerRadius" Value="15" />
+        </Style>
+
+        <Style x:Key="headerTablet" TargetType="Label">
+            <Setter Property="TextColor" Value="Black"/>
+            <Setter Property="FontAttributes" Value="Bold"/>
+            <Setter Property="BackgroundColor" Value="White"/>
+            <Setter Property="VerticalTextAlignment" Value="Center"/>
+            <Setter Property="HorizontalTextAlignment" Value="Center"/>
+        </Style>
+
+        <Style x:Key="detailTablet" TargetType="Label">
+            <Setter Property="TextColor" Value="Black"/>
+            <Setter Property="BackgroundColor" Value="White"/>
+            <Setter Property="VerticalTextAlignment" Value="Center" />
+            <Setter Property="HorizontalTextAlignment" Value="Center"/>
+        </Style>
+        
+    </Application.Resources>
+
+</Application>
